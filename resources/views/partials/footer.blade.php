@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-content container">
-        <div class="made-with">Made with <i class="fa fa-heart heart"></i> by Andre Madarang</div>
+        <div class="made-with">Made with <i class="fa fa-heart heart"></i> by İlhan Ersoy</div>
         <ul>
             <li>Follow Me: </li>
             <li><a href="https://andremadarang.com"><i class="fa fa-globe"></i></a></li>

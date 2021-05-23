@@ -9,8 +9,12 @@ class Product extends Model
 {
     use HasFactory;
 
-    public function presetPrice()
+    public function presentPrice()
     {
         return ('$'.number_format($this->price / 10, 2));
+    }
+
+    public function scopeMightAlsoLike($query){
+        return $query->inRandomOrder()->take(4);
     }
 }

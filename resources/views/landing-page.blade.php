@@ -21,10 +21,10 @@
             <div class="top-nav container">
                 <div class="logo">Laravel Ecommerce</div>
                 <ul>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="{{route('shop.index')}}">Shop</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Cart</a></li>
+                    <li><a href="{{route('cart.index')}}">Cart</a></li>
                 </ul>
             </div> <!-- end top-nav -->
             <div class="hero container">
@@ -38,7 +38,7 @@
                 </div> <!-- end hero-copy -->
 
                 <div class="hero-image">
-                    <img src="img/macbook-pro-laravel.png" alt="hero image">
+                    <img src="{{asset('img/products/macbook-pro.png')}}" alt="hero image">
                 </div> <!-- end hero-image -->
             </div> <!-- end hero -->
         </header>
@@ -67,9 +67,9 @@
                 <div class="products text-center">
                     @foreach($products as $product)
                         <div class="product">
-                            <a href="#"><img src="/img/macbook-pro.png" alt="product"></a>
-                            <a href="#"><div class="product-name">{{$product->name}}</div></a>
-                            <div class="product-price">{{$product->presetPrice()}}</div>
+                            <a href="{{route('shop.show',$product->slug)}}"><img src="{{asset('img/products/laptop-'.$product->id.'.png')}}" alt="product"></a>
+                            <a href="{{route('shop.show',$product->slug)}}"><div class="product-name">{{$product->name}}</div></a>
+                            <div class="product-price">{{$product->presentPrice()}}</div>
                         </div>
                     @endforeach
                 </div> <!-- end products -->
