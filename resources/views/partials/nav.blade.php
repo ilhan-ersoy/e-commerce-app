@@ -6,7 +6,15 @@
             <li><a href="{{route('shop.index')}}">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="{{route('cart.index')}}">Cart</a></li>
+            <li>
+                <a href="{{route('cart.index')}}">Cart
+                        @if (Cart::count() > 0)
+                            <span style="background-color:forestgreen;border-radius: 40%;padding: 4px;">
+                                {{Cart::count()}}
+                            </span>
+                        @endif
+                </a>
+            </li>
         </ul>
         @endif
     </div> <!-- end top-nav -->

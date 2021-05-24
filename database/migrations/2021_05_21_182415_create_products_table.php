@@ -13,6 +13,16 @@ class CreateProductsTable extends Migration
      * @return void
      */
 
+
+    /**
+     * id
+     * Adı
+     * Soyadı
+     * telefon
+     * e-mail
+     * sifre
+     *
+     */
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
