@@ -44,8 +44,9 @@
                 @endif
 
             <div class="cart-table">
-{{--            {{dd(Cart::content())}}--}}
-                @foreach(Cart::instance('default')->content() as $item)
+{{--            {{dd(Cart::instance('default')->content())}}--}}
+
+                @foreach(Cart::content() as $item)
                 <div class="cart-table-row">
                     <div class="cart-table-row-left">
                         <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/laptop-'.$item->model->id.'.png')}}" alt="item" class="cart-table-img"></a>
@@ -95,7 +96,7 @@
                 <div class="cart-totals-right">
                     <div>
                         Fiyat <br>
-                        Vergi(%13) <br>
+                        Vergi(%110) <br>
                         <span class="cart-totals-total">Toplam</span>
                     </div>
                     <div class="cart-totals-subtotal">
@@ -109,27 +110,36 @@
             <div class="cart-buttons">
                 @if (Cart::count() > 0)
                     <a href="{{route('shop.index')}}" class="button">Continue Shopping</a>
-                    <a href="#" class="button-primary">Proceed to Checkout</a>
+
+                    <a href="{{route('checkout.index')}}" class="button-primary">Proceed to Checkout</a>
                 @endif
             </div>
 
             <h2>{{Cart::instance('saveForLater')->count()}} items Saved For Later</h2>
 
-                @foreach(Cart::instance('saveForLater'))
+                @foreach(Cart::instance('saveForLater')->content() as $item)
                     <div class="cart-table-row">
                         <div class="cart-table-row-left">
-                            <a href="#"><img src="{{asset('img/products'.)}}" alt="item" class="cart-table-img"></a>
+                            <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/laptop-'.$item->model->id.'.png')}}" alt="item" class="cart-table-img"></a>
                             <div class="cart-item-details">
-                                <div class="cart-table-item"><a href="#">MacBook Pro</a></div>
-                                <div class="cart-table-description">15 inch, 1TB SSD, 32GB RAM</div>
+                                <div class="cart-table-item"><a href="#">{{$item->model->name}}</a></div>
+                                <div class="cart-table-description">{{$item->model->details}}</div>
                             </div>
                         </div>
                         <div class="cart-table-row-right">
                             <div class="cart-table-actions">
-                                <a href="#">Remove</a> <br>
-                                <a href="#">Save for Later</a>
+                                <form action="{{route('safeForLater.destroy',$item->rowId)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" style="background: white;border: white;cursor:pointer;font-size: 15px;">Remove</button>
+                                </form>
+                                <form action="{{route('safeForLater.switchToCart',$item->rowId)}}" method="POST">
+                                    @csrf
+                                    <button type="submit" style="background: white;border: white;cursor:pointer;font-size: 15px;">To Cart</button>
+                                </form>
+
                             </div>
-                            {{-- <div>
+                             <div>
                                 <select class="quantity">
                                     <option selected="">1</option>
                                     <option>2</option>
@@ -137,7 +147,7 @@
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                            </div> --}}
+                            </div>
                             <div>$2499.99</div>
                         </div>
                     </div> <!-- end cart-table-row -->

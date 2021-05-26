@@ -23,23 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +211,8 @@
       <workItem from="1621862234319" duration="7973000" />
       <workItem from="1621872982401" duration="820000" />
       <workItem from="1621874088051" duration="2060000" />
-      <workItem from="1621882876649" duration="4818000" />
+      <workItem from="1621882876649" duration="4897000" />
+      <workItem from="1622054121792" duration="6600000" />
     </task>
     <servers />
   </component>
@@ -251,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="792" y="258" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621862894159" />
-    <state x="551" y="180" key="SettingsEditor" timestamp="1621886943974">
+    <state x="340" y="159" key="SettingsEditor" timestamp="1622053365934">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="551" y="180" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1621886943974" />
+    <state x="340" y="159" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622053365934" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1621806474633">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -263,20 +252,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1621806434512" />
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1621885994704">
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622053640207">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1621885994704" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/checkout.blade.php</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622053640207" />
   </component>
 </project>

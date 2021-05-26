@@ -48,15 +48,21 @@ class CartController extends Controller
 
     public function switchToSaveForLater($id)
     {
-        $item = Cart::get($id);
+        $item = Cart::instance('default')->get($id);
 
-        Cart::remove($id);
+        $duplicates = Cart::instance('saveForLater')->search(function ($cardItem) use ($item) {
+            return $cardItem->id === $item->id;
+        });
+
+        if ($duplicates->isNotEmpty()) {
+            return back()->with('success_message','Item has already Saved For Later !');
+        }
+
+        Cart::instance('default')->remove($id);
 
         Cart::instance('saveForLater')->add($item->id, $item->name, 1, $item->price)
             ->associate('App\Models\Product');
 
-
-        return back()->with('success_message','Item has been saved !');    }
-
-
+        return back()->with('success_message', 'Item has been saved !');
+    }
 }
