@@ -2,7 +2,13 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Http\Requests\CheckoutRequest;
+use Cartalyst\Stripe\Exception\CardErrorException;
+use Cartalyst\Stripe\Stripe;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Mockery\Exception;
 
 class CheckoutController extends Controller
 {
@@ -16,25 +22,35 @@ class CheckoutController extends Controller
         return view('checkout');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function store(CheckoutRequest $request)
     {
-        //
-    }
+        $stripe = new Stripe('sk_test_51IvnE6EqXQIluMZ7Yg30iI6R4WNrvJwN1se32qfAuuW8gWHn0DmiReMa6ekNMQPSImzD4IGmCJaG9bh5GTD47kYy00ari4NlUd');
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        $contents = Cart::content()->map(function ($item){
+            return $item->model->slug.','.$item->qty;
+        })->values()->toJson();
+
+        try {
+            $charge = $stripe->charges()->create([
+                'amount' => Cart::instance('default')->total() / 10,
+                'currency'=>'CAD',
+                'source' => $request->stripeToken,
+                'description'=>'Order',
+                'receipt_email' => $request->email,
+                'metadata' => [
+                    // Changes the orde id after we start using DB
+                    'contents' => $contents,
+                    'quantity' => Cart::instance('default')->count()
+                ]
+            ]);
+
+            Cart::instance('default')->destroy();
+
+            return redirect()->route('confirmation.index')->with('success_message','Thank you! Your payment has been successfully accepted !');
+        }
+        catch (CardErrorException $e) {
+            return back()->withErrors($e->getMessage());
+        }
     }
 
     /**

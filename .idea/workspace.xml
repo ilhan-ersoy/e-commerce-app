@@ -20,13 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01d5d997-6883-478b-a45e-1543ab290c72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/e-commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/checkout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/checkout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,6 +168,7 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/hardevine/shoppingcart" />
+      <path value="$PROJECT_DIR$/vendor/cartalyst/stripe" />
     </include_path>
   </component>
   <component name="ProjectId" id="1sr0okA4HAhaRrrasUeb6Gxb8Ea" />
@@ -183,7 +192,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -212,7 +221,13 @@
       <workItem from="1621872982401" duration="820000" />
       <workItem from="1621874088051" duration="2060000" />
       <workItem from="1621882876649" duration="4897000" />
-      <workItem from="1622054121792" duration="6600000" />
+      <workItem from="1622054121792" duration="6952000" />
+      <workItem from="1622063059754" duration="21000" />
+      <workItem from="1622063184223" duration="15000" />
+      <workItem from="1622063548685" duration="19000" />
+      <workItem from="1622128315783" duration="4244000" />
+      <workItem from="1622133792564" duration="5374000" />
+      <workItem from="1622221694538" duration="5020000" />
     </task>
     <servers />
   </component>
@@ -240,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="792" y="258" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621862894159" />
-    <state x="340" y="159" key="SettingsEditor" timestamp="1622053365934">
+    <state x="340" y="159" key="SettingsEditor" timestamp="1622229881144">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="340" y="159" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622053365934" />
+    <state x="340" y="159" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622229881144" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1621806474633">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -252,9 +267,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1621806434512" />
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622053640207">
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622229848673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622053640207" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622229848673" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/checkout.blade.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/checkout.blade.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

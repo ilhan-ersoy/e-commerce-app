@@ -36,7 +36,8 @@ class CartController extends Controller
             ->associate('App\Models\Product');
 
 
-        return redirect()->route('cart.index')->with('success_message','Item was added to your cart !');
+        return redirect()->route('cart.index')
+            ->with('success_message','Item was added to your cart !');
     }
 
     public function destroy($id)
@@ -54,7 +55,7 @@ class CartController extends Controller
             return $cardItem->id === $item->id;
         });
 
-        if ($duplicates->isNotEmpty()) {
+        if ($duplicates) {
             return back()->with('success_message','Item has already Saved For Later !');
         }
 

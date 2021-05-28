@@ -4,26 +4,36 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\SafeForLaterController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\ConfirmationController;
 use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
 
+// Routes
 Route::get('/',[LandingPageController::class,'index'])->name('landing-page');
 Route::get('/shop',[ShopController::class,'index'])->name('shop.index');
 Route::get('/shop/{product}',[ShopController::class,'show'])->name('shop.show');
 
 
+
+// Shopping Cart
 Route::get('/cart',[CartController::class,'index'])->name('cart.index');
 Route::post('/cart',[CartController::class,'store'])->name('cart.store');
 Route::delete('/cart/{product}/delete',[CartController::class,'destroy'])->name('cart.destroy');
 Route::post('/cart/switchToSaveForLater/{product}',[CartController::class,'switchToSaveForLater'])->name('cart.switchToSaveForLater');
 
+
+// Safeforlater
 Route::delete('/saveForLater/{product}/delete',[SafeForLaterController::class,'destroy'])->name('safeForLater.destroy');
 Route::post('/saveForLater/switchToCart/{product}',[SafeForLaterController::class,'switchToCart'])->name('safeForLater.switchToCart');
 
+
+// Checkout
 Route::get('/checkout',[CheckoutController::class,'index'])->name('checkout.index');
+Route::post('/checkout',[CheckoutController::class,'store'])->name('checkout.store');
 
 
+Route::get('/thankyou',[ConfirmationController::class,'index'])->name('confirmation.index');
 
 
 Route::get('/empty',function (){
@@ -33,6 +43,5 @@ Route::get('/empty',function (){
 
 Route::view('/product', 'product');
 
-Route::view('/thankyou', 'thankyou');
 
 
