@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,16 +29,38 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/checkout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/checkout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/macbook-pro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +81,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/ilhan-ersoy/e-commerce-app" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,6 +201,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/hardevine/shoppingcart" />
       <path value="$PROJECT_DIR$/vendor/cartalyst/stripe" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1sr0okA4HAhaRrrasUeb6Gxb8Ea" />
@@ -192,13 +225,25 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/img/products" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="terminal" />
+      <command value="php artisan make:model Category -m" />
+      <command value="php artisan make:seed CategoriesTableSeeder " />
+      <command value="php artisan migrate" />
+      <command value="php artisan make:migration:pivot category product" />
+      <command value="php artisan make:migration create_category_product_table --table=category_product" />
+      <command value="php artisan make:migration create_category_product_table --create=category_product" />
+      <command value="php artisan tinker" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -227,7 +272,10 @@
       <workItem from="1622063548685" duration="19000" />
       <workItem from="1622128315783" duration="4244000" />
       <workItem from="1622133792564" duration="5374000" />
-      <workItem from="1622221694538" duration="5020000" />
+      <workItem from="1622221694538" duration="9350000" />
+      <workItem from="1622392686279" duration="8943000" />
+      <workItem from="1622409536049" duration="2006000" />
+      <workItem from="1622412731741" duration="789000" />
     </task>
     <servers />
   </component>
@@ -247,30 +295,58 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="633" y="141" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1622412974097">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="633" y="141" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1622412974097" />
     <state x="698" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1621801873449">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621801873449" />
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom" timestamp="1622412717039">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1622412717039" />
+    <state width="1878" height="248" key="GridCell.Tab.0.center" timestamp="1622412717038">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1622412717038" />
+    <state width="1878" height="248" key="GridCell.Tab.0.left" timestamp="1622412717034">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1622412717034" />
+    <state width="1878" height="248" key="GridCell.Tab.0.right" timestamp="1622412717039">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1622412717039" />
     <state x="792" y="258" key="NewPhpClassDialog" timestamp="1621862894159">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="792" y="258" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621862894159" />
-    <state x="340" y="159" key="SettingsEditor" timestamp="1622229881144">
+    <state x="388" y="183" key="SettingsEditor" timestamp="1622412957140">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="340" y="159" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622229881144" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1621806474633">
+    <state x="388" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622412957140" />
+    <state x="690" y="290" width="540" height="540" key="StructurePopup" timestamp="1622412947528">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1621806474633" />
-    <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621806434512">
+    <state x="690" y="290" width="540" height="540" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412947528" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1622403606286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1621806434512" />
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622229848673">
+    <state width="500" height="445" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1622403606286" />
+    <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622407875825">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622229848673" />
+    <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1622407875825" />
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup" timestamp="1622412225063">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412225063" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622412904762">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412904762" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

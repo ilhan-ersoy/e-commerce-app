@@ -27,7 +27,7 @@ class CheckoutController extends Controller
         $stripe = new Stripe('sk_test_51IvnE6EqXQIluMZ7Yg30iI6R4WNrvJwN1se32qfAuuW8gWHn0DmiReMa6ekNMQPSImzD4IGmCJaG9bh5GTD47kYy00ari4NlUd');
 
         $contents = Cart::content()->map(function ($item){
-            return $item->model->slug.','.$item->qty;
+            return 'Product : '.$item->model->slug.', Product Quantity : '.$item->qty;
         })->values()->toJson();
 
         try {

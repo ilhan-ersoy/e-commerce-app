@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CartUpdate;
 use App\Models\Product;
 
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
+use Opis\Closure\SecurityException;
 
 class CartController extends Controller
 {
@@ -47,6 +50,7 @@ class CartController extends Controller
         return back()->with('success_message','Item has been removed !');
     }
 
+
     public function switchToSaveForLater($id)
     {
         $item = Cart::instance('default')->get($id);
@@ -55,7 +59,7 @@ class CartController extends Controller
             return $cardItem->id === $item->id;
         });
 
-        if ($duplicates) {
+        if ($duplicates->isNotEmpty()) {
             return back()->with('success_message','Item has already Saved For Later !');
         }
 
@@ -65,5 +69,24 @@ class CartController extends Controller
             ->associate('App\Models\Product');
 
         return back()->with('success_message', 'Item has been saved !');
+    }
+
+    public function update(Request $request){
+
+        $validator = Validator::make($request->post(),[
+            'quantity' => 'numeric|required|between:1,5'
+        ]);
+
+        if ($validator->fails()){
+            session()->flash('success_message', 'Quantity must be between 1 and 5 !');
+
+            return response()->json(['success'=>false]);
+        }
+
+        $item = Cart::instance('default')->update($request->rowId,$request->quantity);
+
+        session()->flash('success_message', 'Quantity was updated successfully to '.$item->qty.'.');
+
+        return response()->json(['item'=>$item,'success'=>true]);
     }
 }

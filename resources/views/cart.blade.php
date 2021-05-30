@@ -49,7 +49,7 @@
                 @foreach(Cart::content() as $item)
                 <div class="cart-table-row">
                     <div class="cart-table-row-left">
-                        <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/laptop-'.$item->model->id.'.png')}}" alt="item" class="cart-table-img"></a>
+                        <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/'.$item->model->slug.'.jpg')}}" alt="item" class="cart-table-img"></a>
                         <div class="cart-item-details">
 
                             <div class="cart-table-item"><a href="{{route('shop.show',$item->model->slug)}}">{{$item->model->name}}</a></div>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="cart-table-row-right">
                         <div class="cart-table-actions">
-                            <form action="{{route('cart.destroy',$item->rowId)}}" method="POST">
+                            <form action="{{ route('cart.destroy',$item->rowId) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" style="background: white;border: white;cursor:pointer;font-size: 15px;">Remove</button>
@@ -72,15 +72,13 @@
                             </form>
                         </div>
                         <div>
-                            <select class="quantity">
-                                <option selected="">1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <select class="quantity" item-id="{{$item->rowId}}" >
+                                @for ($i = 1; $i < 5 + 1; $i++)
+                                    <option @if ($item->qty == $i) selected @endif > {{ $i }} </option>
+                                @endfor
                             </select>
                         </div>
-                        <div>{{$item->model->presentPrice()}}</div>
+                        <div>{{ presentPrice($item->subTotal()) }}</div>
                     </div>
                 </div> <!-- end cart-table-row -->
                 @endforeach
@@ -120,7 +118,7 @@
                 @foreach(Cart::instance('saveForLater')->content() as $item)
                     <div class="cart-table-row">
                         <div class="cart-table-row-left">
-                            <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/laptop-'.$item->model->id.'.png')}}" alt="item" class="cart-table-img"></a>
+                            <a href="{{route('shop.show',$item->model->slug)}}"><img src="{{asset('img/products/'.$item->model->slug.'.jpg')}}" alt="item" class="cart-table-img"></a>
                             <div class="cart-item-details">
                                 <div class="cart-table-item"><a href="#">{{$item->model->name}}</a></div>
                                 <div class="cart-table-description">{{$item->model->details}}</div>
@@ -155,13 +153,39 @@
 
 
 
-
-
         </div>
 
     </div> <!-- end cart-section -->
+    @include('partials.might-like')
+@endsection
 
-{{--    @include('partials.might-like')--}}
+@section('extra-js')
+    <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        (function(){
 
+            let item = $('.quantity');
+
+            item.change(function (){
+                const id = $(this).attr('item-id');
+
+                const itemQuantity = $(this).val();
+
+                axios.patch('/cart/'+id,{
+                    rowId : id,
+                    quantity : itemQuantity
+                }).then(function (response) {
+                    // console.log(response);
+                    window.location.href = '{{route('cart.index')}}'
+                }).then(function (error) {
+                    // console.log(error);
+                    window.location.href = '{{route('cart.index')}}'
+                });
+
+            });
+
+        })();
+    </script>
 
 @endsection
