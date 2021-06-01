@@ -23,44 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01d5d997-6883-478b-a45e-1543ab290c72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/e-commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_21_182415_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/laptop-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/products/macbook-pro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/shop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/shop.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +199,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -275,7 +249,8 @@
       <workItem from="1622221694538" duration="9350000" />
       <workItem from="1622392686279" duration="8943000" />
       <workItem from="1622409536049" duration="2006000" />
-      <workItem from="1622412731741" duration="789000" />
+      <workItem from="1622412731741" duration="890000" />
+      <workItem from="1622564428694" duration="10533000" />
     </task>
     <servers />
   </component>
@@ -295,6 +270,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="594" y="225" key="#Inspections" timestamp="1622565199112">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="594" y="225" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1622565199112" />
     <state x="633" y="141" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1622412974097">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -323,14 +302,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="792" y="258" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621862894159" />
-    <state x="388" y="183" key="SettingsEditor" timestamp="1622412957140">
+    <state x="671" y="164" key="SettingsEditor" timestamp="1622573524497">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="388" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622412957140" />
-    <state x="690" y="290" width="540" height="540" key="StructurePopup" timestamp="1622412947528">
+    <state x="671" y="164" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622573524497" />
+    <state x="690" y="290" width="540" height="540" key="StructurePopup" timestamp="1622413557530">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="290" width="540" height="540" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412947528" />
+    <state x="690" y="290" width="540" height="540" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1622413557530" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1622403606286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -343,10 +322,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412225063" />
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622412904762">
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622577489991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412904762" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622577489991" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
