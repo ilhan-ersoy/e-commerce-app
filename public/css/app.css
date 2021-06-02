@@ -186,6 +186,7 @@ h2 {
 }
 
 .button {
+  cursor: pointer;
   border: 1px solid #212121;
   padding: 12px 40px;
 }

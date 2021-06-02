@@ -94,7 +94,7 @@
                 <div class="cart-totals-right">
                     <div>
                         Fiyat <br>
-                        Vergi(%110) <br>
+                        Vergi(%13) <br>
                         <span class="cart-totals-total">Toplam</span>
                     </div>
                     <div class="cart-totals-subtotal">

@@ -5,6 +5,7 @@ use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\SafeForLaterController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ConfirmationController;
+use App\Http\Controllers\CouponsController;
 use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,9 +33,11 @@ Route::post('/saveForLater/switchToCart/{product}',[SafeForLaterController::clas
 Route::get('/checkout',[CheckoutController::class,'index'])->name('checkout.index');
 Route::post('/checkout',[CheckoutController::class,'store'])->name('checkout.store');
 
-
+//Confirmation
 Route::get('/thankyou',[ConfirmationController::class,'index'])->name('confirmation.index');
 
+Route::post('/coupon',[CouponsController::class,'store'])->name('coupon.store');
+Route::delete('/coupon/delete',[CouponsController::class,'destroy'])->name('coupon.destroy');
 
 Route::get('/empty',function (){
    Cart::instance('saveForLater')->destroy();

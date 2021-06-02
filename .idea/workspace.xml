@@ -25,16 +25,12 @@
     <list default="true" id="01d5d997-6883-478b-a45e-1543ab290c72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/shop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/shop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +58,11 @@
         <option value="https://github.com/ilhan-ersoy/e-commerce-app" />
       </set>
     </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -250,7 +251,10 @@
       <workItem from="1622392686279" duration="8943000" />
       <workItem from="1622409536049" duration="2006000" />
       <workItem from="1622412731741" duration="890000" />
-      <workItem from="1622564428694" duration="10533000" />
+      <workItem from="1622564428694" duration="10852000" />
+      <workItem from="1622578267820" duration="1086000" />
+      <workItem from="1622580853886" duration="2459000" />
+      <workItem from="1622649933938" duration="7543000" />
     </task>
     <servers />
   </component>
@@ -274,6 +278,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="594" y="225" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1622565199112" />
+    <state x="188" y="73" key="#Live_Templates" timestamp="1622650836472">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="188" y="73" key="#Live_Templates/0.0.1920.1080@0.0.1920.1080" timestamp="1622650836472" />
     <state x="633" y="141" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1622412974097">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -302,14 +310,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="792" y="258" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1621862894159" />
-    <state x="671" y="164" key="SettingsEditor" timestamp="1622573524497">
+    <state x="436" y="145" key="SettingsEditor" timestamp="1622658339520">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="671" y="164" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622573524497" />
-    <state x="690" y="290" width="540" height="540" key="StructurePopup" timestamp="1622413557530">
+    <state x="436" y="145" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1622658339520" />
+    <state x="690" y="290" width="540" height="540" key="StructurePopup" timestamp="1622650125898">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="290" width="540" height="540" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1622413557530" />
+    <state x="690" y="290" width="540" height="540" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1622650125898" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1622403606286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -318,23 +326,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1622407875825" />
+    <state x="835" y="415" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1622650127482">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="835" y="415" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622650127482" />
     <state x="625" y="255" width="670" height="675" key="run.anything.popup" timestamp="1622412225063">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412225063" />
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622577489991">
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1622658850066">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622577489991" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622658850066" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/checkout.blade.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/checkout.blade.php</url>
           <line>11</line>
