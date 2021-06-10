@@ -18,17 +18,34 @@
         </div>
     </div> <!-- end breadcrumbs -->
 
+
     <div class="product-section container">
-        <div class="product-section-image">
-            <img src="{{ asset('img/products/'.$product->slug.'.jpg') }}" alt="product">
+
+        <div>
+            <div class="product-section-image">
+                <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
+            </div>
+
+            <div class="product-section-images">
+                <div class="product-section-thumbnail">
+                    <img src="{{ asset('img/blog1.png') }}">
+                </div>
+{{--                @if ($product->images)--}}
+{{--                    @foreach (json_decode($product->images) as $image)--}}
+{{--                        <img src="{{ asset('storage/'.$image) }}">--}}
+{{--                    @endforeach--}}
+{{--                @endif--}}
+
+            </div>
         </div>
+
         <div class="product-section-information">
-            <h1 class="product-section-title">{{$product->name}}</h1>
-            <div class="product-section-subtitle">{{$product->details}}</div>
-            <div class="product-section-price">{{$product->presentPrice()}}</div>
+            <h1 class="product-section-title">{!! $product->name !!}</h1>
+            <div class="product-section-subtitle">{!! $product->details !!}</div>
+            <div class="product-section-price">{!! $product->presentPrice() !!}</div>
 
             <p>
-                {{$product->description}}
+                {!! $product->description !!}
             </p>
 
 

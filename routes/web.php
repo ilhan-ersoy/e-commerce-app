@@ -48,3 +48,8 @@ Route::view('/product', 'product');
 
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

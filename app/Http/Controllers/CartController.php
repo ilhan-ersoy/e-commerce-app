@@ -7,9 +7,8 @@ use App\Models\Product;
 
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use Opis\Closure\SecurityException;
+
 
 class CartController extends Controller
 {
@@ -19,7 +18,7 @@ class CartController extends Controller
         $mightAlsoLike = Product::MightAlsoLike()->get();
 
         return view('cart')->with([
-            'mightAlsoLike'=>$mightAlsoLike
+            'mightAlsoLike'=> $mightAlsoLike
         ]);
     }
 

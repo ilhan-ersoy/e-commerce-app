@@ -21,6 +21,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'laptop-' . $i,
                 'details' => [13, 14, 15][array_rand([13, 14, 15])] . ' inch, ' . [1, 2, 3][array_rand([1, 2, 3])] . ' TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
+                'image'=> 'products/June2021/'.'laptop-'.$i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(1);
         }
@@ -32,6 +33,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'desktop-' . $i,
                 'details' => [24, 25, 27][array_rand([24, 25, 27])] . ' inch, ' . [1, 2, 3][array_rand([1, 2, 3])] . ' TB SSD, 32GB RAM',
                 'price' => rand(249999, 449999),
+                'image'=> 'products/June2021/'.'desktop-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(2);
         }
@@ -43,6 +45,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'phone-' . $i,
                 'details' => [16, 32, 64][array_rand([16, 32, 64])] . 'GB, 5.' . [7, 8, 9][array_rand([7, 8, 9])] . ' inch screen, 4GHz Quad Core',
                 'price' => rand(79999, 149999),
+                'image'=> 'products/June2021/'.'phone-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(3);
         }
@@ -54,6 +57,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'tablet-' . $i,
                 'details' => [16, 32, 64][array_rand([16, 32, 64])] . 'GB, 5.' . [10, 11, 12][array_rand([10, 11, 12])] . ' inch screen, 4GHz Quad Core',
                 'price' => rand(49999, 149999),
+                'image'=> 'products/June2021/'.'tablet-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(4);
         }
@@ -65,6 +69,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'tv-' . $i,
                 'details' => [46, 50, 60][array_rand([7, 8, 9])] . ' inch screen, Smart TV, 4K',
                 'price' => rand(79999, 149999),
+                'image'=> 'products/June2021/'.'tv-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(5);
         }
@@ -76,6 +81,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'camera-' . $i,
                 'details' => 'Full Frame DSLR, with 18-55mm kit lens.',
                 'price' => rand(79999, 249999),
+                'image'=> 'products/June2021/'.'camera-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(6);
         }
@@ -87,6 +93,7 @@ class ProductsTableSeeder extends Seeder
                 'slug' => 'appliance-' . $i,
                 'details' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dolorum!',
                 'price' => rand(79999, 149999),
+                'image'=> 'products/June2021/'.'appliance-' . $i.'.jpg',
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
             ])->categories()->attach(7);
         }

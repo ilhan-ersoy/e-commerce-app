@@ -186,7 +186,6 @@ h2 {
 }
 
 .button {
-  cursor: pointer;
   border: 1px solid #212121;
   padding: 12px 40px;
 }
@@ -490,6 +489,21 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-gap: 120px;
   padding: 100px 0 120px;
+}
+
+.product-section-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.product-section-thumbnail {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  min-height: 66px;
+  cursor: pointer;
 }
 
 .product-section-image {
