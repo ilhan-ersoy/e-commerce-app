@@ -1,6 +1,7 @@
 .button {
     border: 1px solid $text-color;
     padding: 12px 40px;
+    cursor: pointer;
 
     &:hover {
         color: $white;
