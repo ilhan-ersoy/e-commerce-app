@@ -188,7 +188,6 @@ h2 {
 .button {
   border: 1px solid #212121;
   padding: 12px 40px;
-  cursor: pointer;
 }
 .button:hover {
   color: #e9e9e9;
@@ -491,9 +490,6 @@ footer {
   grid-gap: 120px;
   padding: 100px 0 120px;
 }
-.product-section .selected {
-  border: 1px solid #979797;
-}
 
 .product-section-images {
   display: grid;
@@ -506,12 +502,8 @@ footer {
   display: flex;
   align-items: center;
   border: 1px solid lightgray;
-  min-height: 100px;
-  min-width: 100px;
+  min-height: 66px;
   cursor: pointer;
-}
-.product-section-thumbnail:hover {
-  border: 1px solid #979797;
 }
 
 .product-section-image {
@@ -522,15 +514,6 @@ footer {
   padding: 30px;
   text-align: center;
   height: 400px;
-}
-.product-section-image img {
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
-  max-width: 550px;
-  max-height: 360px;
-}
-.product-section-image img.active {
-  opacity: 1;
 }
 
 .product-section-information p {

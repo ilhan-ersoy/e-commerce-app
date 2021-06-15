@@ -22,33 +22,21 @@
     <div class="product-section container">
 
         <div>
-
             <div class="product-section-image">
-
-                <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" id="bigImage">
-
+                <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
             </div>
+
             <div class="product-section-images">
-
-                @if ($product->images)
-                    <div class="product-section-thumbnail selected">
-                        <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
-                    </div>
-                    <div class="product-section-thumbnail selected">
-                        <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
-                    </div>
-                    <div class="product-section-thumbnail selected">
-                        <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
-                    </div>
-                    @foreach (json_decode($product->images) as $image)
-                        <div class="product-section-thumbnail">
-                            <img src="{{ asset('storage/'.$image) }}" alt="{{ $product->name }}">
-                        </div>
-                    @endforeach
-                @endif
+                <div class="product-section-thumbnail">
+                    <img src="{{ asset('img/blog1.png') }}">
+                </div>
+{{--                @if ($product->images)--}}
+{{--                    @foreach (json_decode($product->images) as $image)--}}
+{{--                        <img src="{{ asset('storage/'.$image) }}">--}}
+{{--                    @endforeach--}}
+{{--                @endif--}}
 
             </div>
-
         </div>
 
         <div class="product-section-information">
@@ -76,34 +64,4 @@
     @include('partials.might-like')
 
 
-@endsection
-
-@section('extra-js')
-    <script src="{{asset('js/app.js')}}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        (function (){
-
-            const images = $('.product-section-thumbnail');
-            let currentImage = $('#bigImage');
-
-            currentImage.addClass("active");
-
-            images.click(function () {
-                let currentImage = $('#bigImage');
-                currentImage.removeClass("active");
-                let newImagePath = $(this).children("img").attr("src");
-                currentImage.on("transitionend",function () {
-                    currentImage.attr("src",newImagePath);
-                    currentImage.addClass("active");
-                });
-
-                images.removeClass('selected');
-
-
-                $(this).addClass("selected");
-
-            });
-        })();
-    </script>
 @endsection
