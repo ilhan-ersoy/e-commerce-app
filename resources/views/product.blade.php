@@ -30,11 +30,13 @@
                 <div class="product-section-thumbnail">
                     <img src="{{ asset('img/blog1.png') }}">
                 </div>
+
 {{--                @if ($product->images)--}}
 {{--                    @foreach (json_decode($product->images) as $image)--}}
 {{--                        <img src="{{ asset('storage/'.$image) }}">--}}
 {{--                    @endforeach--}}
 {{--                @endif--}}
+
 
             </div>
         </div>
@@ -63,5 +65,16 @@
 
     @include('partials.might-like')
 
+
+@endsection
+@section('extra-js')
+
+    <script>
+        (function(){
+
+
+
+        })();
+    </script>
 
 @endsection
