@@ -22,11 +22,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d5d997-6883-478b-a45e-1543ab290c72" name="Default Changelist" comment="Revert &quot;Deneme&quot;&#10;&#10;This reverts commit 224bb230">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+    <list default="true" id="01d5d997-6883-478b-a45e-1543ab290c72" name="Default Changelist" comment="..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/layout/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/menus/menu.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +240,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/public/img/products" />
     </key>
@@ -286,7 +304,9 @@
       <workItem from="1623960430238" duration="19000" />
       <workItem from="1624133374472" duration="2885000" />
       <workItem from="1624136676476" duration="319000" />
-      <workItem from="1624137023616" duration="1769000" />
+      <workItem from="1624137023616" duration="8713000" />
+      <workItem from="1624212382637" duration="574000" />
+      <workItem from="1624213109152" duration="4644000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Deneme&quot;&#10;&#10;This reverts commit 224bb230">
       <created>1623774434223</created>
@@ -295,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623774434223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="..">
+      <created>1624139613454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624139613455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +350,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deneme" />
     <MESSAGE value="Revert &quot;Deneme&quot;&#10;&#10;This reverts commit 224bb230" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Deneme&quot;&#10;&#10;This reverts commit 224bb230" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="225" key="#Inspections" timestamp="1622565199112">
@@ -346,22 +374,26 @@
       <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state x="569" y="23" key="CommitChangelistDialog2/0.23.1920.1000@0.23.1920.1000" timestamp="1623774434113" />
-    <state width="1878" height="248" key="GridCell.Tab.0.bottom" timestamp="1623791437161">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1878" height="219" key="GridCell.Tab.0.bottom" timestamp="1624149346739">
+      <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state width="1878" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1623791437161" />
-    <state width="1878" height="248" key="GridCell.Tab.0.center" timestamp="1623791437159">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1878" height="219" key="GridCell.Tab.0.bottom/0.23.1920.1000@0.23.1920.1000" timestamp="1624149346739" />
+    <state width="1878" height="219" key="GridCell.Tab.0.center" timestamp="1624149346739">
+      <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state width="1878" height="248" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1623791437159" />
-    <state width="1878" height="248" key="GridCell.Tab.0.left" timestamp="1623791437158">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1878" height="219" key="GridCell.Tab.0.center/0.23.1920.1000@0.23.1920.1000" timestamp="1624149346739" />
+    <state width="1878" height="219" key="GridCell.Tab.0.left" timestamp="1624149346739">
+      <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state width="1878" height="248" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1623791437158" />
-    <state width="1878" height="248" key="GridCell.Tab.0.right" timestamp="1623791437160">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1878" height="219" key="GridCell.Tab.0.left/0.23.1920.1000@0.23.1920.1000" timestamp="1624149346739" />
+    <state width="1878" height="219" key="GridCell.Tab.0.right" timestamp="1624149346739">
+      <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state width="1878" height="248" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1623791437160" />
+    <state width="1878" height="219" key="GridCell.Tab.0.right/0.23.1920.1000@0.23.1920.1000" timestamp="1624149346739" />
     <state x="792" y="258" key="NewPhpClassDialog" timestamp="1621862894159">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -379,11 +411,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1622748577468" />
-    <state x="560" y="244" key="Vcs.Push.Dialog.v2" timestamp="1624134041094">
+    <state x="560" y="244" key="Vcs.Push.Dialog.v2" timestamp="1624139614992">
       <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state x="560" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1623784519740" />
-    <state x="560" y="244" key="Vcs.Push.Dialog.v2/0.23.1920.1000@0.23.1920.1000" timestamp="1624134041094" />
+    <state x="560" y="244" key="Vcs.Push.Dialog.v2/0.23.1920.1000@0.23.1920.1000" timestamp="1624139614992" />
     <state x="783" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622747403194">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -396,19 +428,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622757207460" />
-    <state x="835" y="415" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1622739102485">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="835" y="407" width="250" height="258" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1624141509575">
+      <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state x="835" y="415" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622739102485" />
+    <state x="835" y="407" width="250" height="258" key="jetbrains.javascript.buildTools.run-task-popup/0.23.1920.1000@0.23.1920.1000" timestamp="1624141509575" />
     <state x="625" y="255" width="670" height="675" key="run.anything.popup" timestamp="1622412225063">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1622412225063" />
-    <state x="625" y="246" width="838" height="626" key="search.everywhere.popup" timestamp="1624139205417">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1624218261215">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1624135623922" />
-    <state x="625" y="246" width="838" height="626" key="search.everywhere.popup/0.23.1920.1000@0.23.1920.1000" timestamp="1624139205417" />
+    <state x="625" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1624218261215" />
+    <state x="625" y="246" width="838" height="626" key="search.everywhere.popup/0.23.1920.1000@0.23.1920.1000" timestamp="1624213534862" />
+    <state x="625" y="244" width="838" height="622" key="search.everywhere.popup/0.23.1920.993@0.23.1920.993" timestamp="1624215989275" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

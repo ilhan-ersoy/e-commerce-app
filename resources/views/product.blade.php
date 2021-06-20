@@ -23,19 +23,22 @@
 
         <div>
             <div class="product-section-image">
-                <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
+                <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" id="bigImage">
             </div>
 
             <div class="product-section-images">
-                <div class="product-section-thumbnail">
-                    <img src="{{ asset('img/blog1.png') }}">
+                <div class="product-section-thumbnail selected">
+                    <img src="{{ asset('storage/'.$product->image) }}">
                 </div>
 
-{{--                @if ($product->images)--}}
-{{--                    @foreach (json_decode($product->images) as $image)--}}
-{{--                        <img src="{{ asset('storage/'.$image) }}">--}}
-{{--                    @endforeach--}}
-{{--                @endif--}}
+
+                @if ($product->images)
+                    @foreach (json_decode($product->images) as $image)
+                        <div class="product-section-thumbnail">
+                            <img src="{{ asset('storage/'.$image) }}" alt="image">
+                        </div>
+                    @endforeach
+                @endif
 
 
             </div>
@@ -68,9 +71,30 @@
 
 @endsection
 @section('extra-js')
-
+    <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         (function(){
+
+            const images = $('.product-section-thumbnail');
+            let currentImage = $('#bigImage');
+            currentImage.addClass("active");
+            images.click(function () {
+
+                let newImagePath = $(this).children("img").attr("src");
+
+                currentImage.removeClass("active");
+
+                currentImage.on('transitionend',function () {
+                   currentImage.attr("src",newImagePath);
+                   currentImage.addClass("active");
+                });
+
+                images.removeClass("selected");
+
+                $(this).addClass("selected");
+
+            });
 
 
 

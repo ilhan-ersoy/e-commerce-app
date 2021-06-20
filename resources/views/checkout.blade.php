@@ -39,7 +39,7 @@
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
+                        <input type="email" class="form-control" id="email" name="email" value="{{ currentUser()->email }}" readonly>
                     </div>
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -109,7 +109,7 @@
                     @foreach (Cart::content() as $item)
                         <div class="checkout-table-row">
                             <div class="checkout-table-row-left">
-                                <img src="{{ asset('storage/'.$item->image) }}" alt="item" class="checkout-table-img">
+                                <img src="{{ asset('storage/'.$item->model->image) }}" alt="item" class="checkout-table-img">
                                 <div class="checkout-item-details">
                                     <div class="checkout-table-item">{{ $item->model->name }}</div>
                                     <div class="checkout-table-description">{{ $item->model->details }}</div>

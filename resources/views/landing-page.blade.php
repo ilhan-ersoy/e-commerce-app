@@ -12,34 +12,40 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css?v=').time()}}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
     </head>
     <body>
-        <header class="with-background">
-            <div class="top-nav container">
-                <div class="logo">Laravel Ecommerce</div>
-
+    <header class="with-background">
+        <div class="top-nav container">
+            <div class="top-nav-left">
+                <div class="logo">E-Commerce</div>
                 {{ menu('main', 'partials.menus.menu') }}
 
-            </div> <!-- end top-nav -->
-            <div class="hero container">
-                <div class="hero-copy">
-                    <h1>E-Commerce</h1>
-                    <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe integration.</p>
+            </div>
+            <div class="top-nav-right">
+                @include('partials/menus.main-right')
 
-                    <div class="hero-buttons">
-                        <a href="#" class="button button-white">Blog Post</a>
-                        <a href="#" class="button button-white">GitHub</a>
-                    </div>
-                </div> <!-- end hero-copy -->
+            </div>
 
-                <div class="hero-image">
-                    <img src="{{asset('img/macbook-pro-laravel.png')}}" alt="hero image">
-                </div> <!-- end hero-image -->
-            </div> <!-- end hero -->
-        </header>
+        </div> <!-- end top-nav -->
+        <div class="hero container">
+            <div class="hero-copy">
+                <h1>E-Commerce</h1>
+                <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe integration.</p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="button button-white">Blog Post</a>
+                    <a href="#" class="button button-white">GitHub</a>
+                </div>
+            </div> <!-- end hero-copy -->
+
+            <div class="hero-image">
+                <img src="{{asset('img/macbook-pro-laravel.png')}}" alt="hero image">
+            </div> <!-- end hero-image -->
+        </div> <!-- end hero -->
+    </header>
 
         <div class="featured-section">
 

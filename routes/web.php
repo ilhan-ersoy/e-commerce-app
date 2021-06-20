@@ -30,7 +30,7 @@ Route::post('/saveForLater/switchToCart/{product}',[SafeForLaterController::clas
 
 
 // Checkout
-Route::get('/checkout',[CheckoutController::class,'index'])->name('checkout.index');
+Route::get('/checkout',[CheckoutController::class,'index'])->name('checkout.index')->middleware('auth');
 Route::post('/checkout',[CheckoutController::class,'store'])->name('checkout.store');
 
 //Confirmation
@@ -53,3 +53,7 @@ Route::view('/product', 'product');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

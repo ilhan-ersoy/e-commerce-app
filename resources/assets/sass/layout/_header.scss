@@ -69,23 +69,42 @@ header.with-background {
         font-weight: bold;
         font-size: 28px;
         color: $white;
+        margin-right: 35px;
       }
 
       ul {
-        display: flex;
-        text-transform: uppercase;
-        justify-content: space-between;
-        width: 40%;
-        padding-top: 8px;
-        font-weight: 400;
+          display: flex;
+          text-transform: uppercase;
+          justify-content: space-between;
+          width: 40%;
+          padding-top: 8px;
+          font-weight: 400;
 
-        a {
-          color: $white;
-          &:hover {
-            color: darken($white, 10%);
+          li {
+              margin-right: 20px;
+              &:last-child {
+                  margin-right: 0;
+              }
+
           }
-        }
+
+          a {
+              color: $white;
+              &:hover {
+                  color: darken($white, 10%);
+              }
+
+          }
 
       }
     }
+      .top-nav-left {
+          display: flex;
+          align-items: center;
+      }
+
+      .top-nav-right {
+          display: flex;
+          align-items: center;
+      }
   }
